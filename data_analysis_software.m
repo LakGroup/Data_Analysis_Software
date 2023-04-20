@@ -244,38 +244,13 @@ uimenu(edit_menu,'Text','Rename File(s) Counter','Callback',{@rename_counter_cal
 %---------------------edit menu---------------------
 %---------------------modules menu------------------
 modules_menu = uimenu('Text','Modules');
-uimenu(modules_menu,'Text','Colocalization Module','Callback',{@coloc_module});
-uimenu(modules_menu,'Text','Colocalization Module NEW','Callback',{@coloc_module_New});
-uimenu(modules_menu,'Text','Extract Localizations Module','Callback',@Extract_Locs);
-uimenu(modules_menu,'Text','Extract Localizations Module - Adriana','Callback',@Extract_Locs_Adriana);
-uimenu(modules_menu,'Text','Colocalization Statistics Module','Callback',{@coloc_stat_module});
-uimenu(modules_menu,'Text','Non-coloc Statistics','Callback',{@noncoloc_stat_module});
-uimenu(modules_menu,'Text','Dual Colour Module','Callback',{@coloc_dualColour_Module});
+uimenu(modules_menu,'Text','Colocalization Module','Callback',{@coloc_module_New});
+uimenu(modules_menu,'Text','Dual Color Module','Callback',{@coloc_dualColour_Module});
 uimenu(modules_menu,'Text','Single Particle Tracks Tiff Image Overlay (Colocalization)','Callback',{@spt_layover_colocalization});
 uimenu(modules_menu,'Text','Single Particle Tracks Tiff Image Overlay (Max Distance)','Callback',{@spt_layover_max_dist});
 
-    function coloc_module(~,~,~)
-        colocalization_module()        
-    end
-
     function coloc_module_New(~,~,~)
         colocalization_module_New()        
-    end
-
-    function Extract_Locs(~,~,~)
-        Locs_Extraction_Module()        
-    end
-
-    function Extract_Locs_Adriana(~,~,~)
-        Locs_Extraction_Module_Adriana()        
-    end
-
-    function coloc_stat_module(~,~,~)
-        colocalization_statistics_module()        
-    end
-
-    function noncoloc_stat_module(~,~,~)
-        noncolocdata_statistics_module()        
     end
 
     function coloc_dualColour_Module(~,~,~)
