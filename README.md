@@ -40,6 +40,7 @@ To Run:
  
  The output will be:
   - An Excel file with the entire summary of the output.
+  - The seperated data saved in the data browser
   
 ## Other
 For more information, please refer to: xxx (to be updated)
