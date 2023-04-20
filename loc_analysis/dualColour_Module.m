@@ -12,7 +12,7 @@ set(gcf,'name','Colocalization Module','NumberTitle','off','color','k','units','
 % colocalization.
 uicontrol('style','pushbutton','units','normalized','position',[0,0.95,0.2,0.05],'string','Set Reference Data','ForegroundColor','b','Callback',{@set_reference_data_callback},'FontSize',12);
 uicontrol('style','pushbutton','units','normalized','position',[0.2,0.95,0.2,0.05],'string','Set Colocalization Data','ForegroundColor','b','Callback',{@set_colocalization_data_callback},'FontSize',12);
-uicontrol('style','pushbutton','units','normalized','position',[0.4,0.95,0.2,0.05],'string','Start Dual Colour Analysis','ForegroundColor','b','Callback',{@colocalization_callback},'FontSize',12);
+uicontrol('style','pushbutton','units','normalized','position',[0.4,0.95,0.2,0.05],'string','Start Dual Color Analysis','ForegroundColor','b','Callback',{@colocalization_callback},'FontSize',12);
 
 % Make the reference data and the colocalization data matrices empty.
 data_reference = [];
